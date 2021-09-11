@@ -11,7 +11,7 @@
     <body>
         <div class="container">
             <h1>Ciudadano de 4 Patas</h1>
-            <form>
+            <form name="formulario">
                 <div class="row">
                     <div class="col">
                         <label for="date-input">Fecha de Registro:</label>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col">
                         <label for="mc-input">Microchip:</label>
-                        <input type="number" class="form-control" min="0" id="mc-input">
+                        <input type="text" class="form-control" id="mc-input">
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                     </div>
                     <div class="col">
                         <label for="locality-input">Localidad:</label>
-                        <select class="form-select" id="locality-input" >
+                        <select class="form-select" id="locality-input" required>
                             <option>Usaquen</option>
                             <option>Chapinero</option>
                             <option>SANTA FE</option>
@@ -99,20 +99,22 @@
                             <option>P. ARANDA</option>
                             <option>R. URIBE</option>
                             <option>C. BOLIVAR</option>
-                            <option>MUNICIPIOS ALEDATORIOS BOGOTA D.C.</option>
+                            <option>MUNICIPIOS ALEATORIOS BOGOTA D.C.</option>
                         </select>
                     </div>
                 </div>
                 <br>
                 <input id="petsave-button" type="button" value="Guardar">
+                <!-- <button type="submit" class="btn btn-primary" id="petsave-button" >Guardar</button> -->
                 <!-- <input id="petsave-button" type="button" value="Guardar">
                 <input id="petclean-button" type="button" value="Limpiar"> -->
             </form>
         </div>
         
         <br><br>
+        
         <div class="container">
-            <table class="table">
+            <table class="table table-sortable" id="pet-table">
                 <thead>
                     <tr>
                         <th scope="col" class="columm-header">ID</th>
@@ -132,6 +134,7 @@
                 <tbody id="body-table"></tbody>
             </table>
         </div>
+        <script src="./js/tablesort.js"></script>
         <script src="./js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>

@@ -1,12 +1,18 @@
 var rowId = 0
 
+
+
+
 document.getElementById("petsave-button").onclick = function () {
+    
+   
+    
     rowId++
     let pet = {
         dateInput: document.getElementById("date-input").value,
         ownerInput: document.getElementById("owner-input").value,
         petNameInput: document.getElementById("petname-input").value,
-        microchipInput: +document.getElementById("mc-input").value,
+        microchipInput: document.getElementById("mc-input").value,
         petSpeciesInput: document.getElementById("petspecies-input").value,
         petSexInput: document.getElementById("petsex-input").value,
         petSizeInput: document.getElementById("petsize-input").value,
@@ -14,6 +20,8 @@ document.getElementById("petsave-button").onclick = function () {
         sterilizedInput: document.getElementById("sterilized-input").value,
         localityInput: document.getElementById("locality-input").value
     }
+
+    
 
     let tr = document.createElement("tr")
     tr.setAttribute("id", "row-" + rowId)
@@ -46,3 +54,4 @@ document.getElementById("petsave-button").onclick = function () {
     document.getElementById("body-table").appendChild(tr)
 
 }
+
