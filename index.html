@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./css/style.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-		<title>Ciudadano de 4 Patas</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<title>Ciudadano de 4 Patas</title>
 </head>
 <body>
 	<div class="container">
 		<h1>Ciudadano de 4 Patas</h1>
-			<form name="formulario">
+		<form name="formulario" id="pet-form" >
 			<div class="row">
 				<div class="col">
 					<label for="date-input">Fecha de Registro:</label>
@@ -52,91 +52,152 @@
 			</div>
 
 			<div class="row">
-					<div class="col">
-							<label for="petsize-input">Tamaño:</label>
-							<select class="form-select" id="petsize-input" required>
-									<option>Minialtura</option>
-									<option>Pequeño</option>
-									<option>Mediano</option>
-									<option>Grande</option>
-							</select>
-					</div>
-					<div class="col">
-							<label for="danger-input">¿La mascota es potencialmente peligrosa?:</label>
-							<select class="form-select" id="danger-input" required>
-									<option>Si</option>
-									<option>No</option>
-							</select>
-					</div>
+				<div class="col">
+					<label for="petsize-input">Tamaño:</label>
+					<select class="form-select" id="petsize-input" required>
+						<option>Minialtura</option>
+						<option>Pequeño</option>
+						<option>Mediano</option>
+						<option>Grande</option>
+					</select>
+				</div>
+				<div class="col">
+					<label for="danger-input">¿La mascota es potencialmente peligrosa?:</label>
+					<select class="form-select" id="danger-input" required>
+						<option>Si</option>
+						<option>No</option>
+					</select>
+				</div>
 			</div>
 
 			<div class="row">
-					<div class="col">
-							<label for="sterilized-input">¿La mascota esta esterilizada?:</label>
-							<select class="form-select" id="sterilized-input" required>
-									<option>Si</option>
-									<option>No</option>
-							</select>
-					</div>
-					<div class="col">
-							<label for="locality-input">Localidad:</label>
-							<select class="form-select" id="locality-input" required>
-									<option>USAQUEN</option>
-									<option>CHAPINERO</option>
-									<option>SANTA FE</option>
-									<option>SAN CRISTOBAL</option>
-									<option>USME</option>
-									<option>TUNJUELITO</option>
-									<option>BOSA</option>
-									<option>KENNEDY</option>
-									<option>FONTIBON</option>
-									<option>ENGATIVA</option>
-									<option>SUBA</option>
-									<option>B. UNIDOS</option>
-									<option>TEUSAQUILLO</option>
-									<option>LOS MARTIRES</option>
-									<option>A. NARINO</option>
-									<option>P. ARANDA</option>
-									<option>R. URIBE</option>
-									<option>C. BOLIVAR</option>
-									<option>MUNICIPIOS ALEATORIOS BOGOTA D.C.</option>
-							</select>
-					</div>
+				<div class="col">
+					<label for="sterilized-input">¿La mascota esta esterilizada?:</label>
+					<select class="form-select" id="sterilized-input" required>
+						<option>Si</option>
+						<option>No</option>
+					</select>
+				</div>
+				<div class="col">
+					<label for="locality-input">Localidad:</label>
+					<select class="form-select" id="locality-input" required>
+						<option>USAQUEN</option>
+						<option>CHAPINERO</option>
+						<option>SANTA FE</option>
+						<option>SAN CRISTOBAL</option>
+						<option>USME</option>
+						<option>TUNJUELITO</option>
+						<option>BOSA</option>
+						<option>KENNEDY</option>
+						<option>FONTIBON</option>
+						<option>ENGATIVA</option>
+						<option>SUBA</option>
+						<option>B. UNIDOS</option>
+						<option>TEUSAQUILLO</option>
+						<option>LOS MARTIRES</option>
+						<option>A. NARINO</option>
+						<option>P. ARANDA</option>
+						<option>R. URIBE</option>
+						<option>C. BOLIVAR</option>
+						<option>MUNICIPIOS ALEATORIOS BOGOTA D.C.</option>
+					</select>
+				</div>
 			</div>
 			<br>
-			<input id="petsave-button" type="button" value="Guardar">
-			<!-- <button type="submit" class="btn btn-primary" id="petsave-button" >Guardar</button> -->
+			<!-- <input id="petsave-button" type="button" value="Guardar"> -->
+			<button type="submit" class="btn btn-primary" id="petsave-button" >Guardar</button>
 			<!-- <input id="petsave-button" type="button" value="Guardar">
-			<input id="petclean-button" type="button" value="Limpiar"> -->
-		</form>
-	</div>
-	
-	<br><br>
-	
-	<div class="container">
+				<input id="petclean-button" type="button" value="Limpiar"> -->
+			</form>
+		</div>
+		
+		<br><br>
+		
+		<div class="container">
 			<table class="table table-sortable" id="pet-table">
-					<thead>
-							<tr>
-									<th scope="col" class="columm-header">ID</th>
-									<th scope="col" class="columm-header">Fecha de Registro</th>
-									<th scope="col" class="columm-header">Nombre del Propietario</th>
-									<th scope="col" class="columm-header">Nombre de la Mascota</th>
-									<th scope="col" class="columm-header">Microchip</th>
-									<th scope="col" class="columm-header">Especie</th>
-									<th scope="col" class="columm-header">Sexo</th>
-									<th scope="col" class="columm-header">Tamaño</th>
-									<th scope="col" class="columm-header">Potecialmente Peligroso</th>
-									<th scope="col" class="columm-header">Esterilizado</th>
-									<th scope="col" class="columm-header">Localidad</th>
-									<th scope="col" class="columm-header" id="pet-image">Foto</th>
-									
-							</tr>
-					</thead>
-					<tbody id="body-table"></tbody>
+				<thead>
+					<tr>
+						<th scope="col" class="columm-header">ID</th>
+						<th scope="col" class="columm-header">Fecha de Registro</th>
+						<th scope="col" class="columm-header">Nombre del Propietario</th>
+						<th scope="col" class="columm-header">Nombre de la Mascota</th>
+						<th scope="col" class="columm-header">Microchip</th>
+						<th scope="col" class="columm-header">Especie</th>
+						<th scope="col" class="columm-header">Sexo</th>
+						<th scope="col" class="columm-header">Tamaño</th>
+						<th scope="col" class="columm-header">Potecialmente Peligroso</th>
+						<th scope="col" class="columm-header">Esterilizado</th>
+						<th scope="col" class="columm-header">Localidad</th>
+						<th scope="col" class="columm-header">Ultima modificación</th>
+						<th scope="col" class="columm-header">Hora de implantación Microchip</th>
+						<th scope="col" class="columm-header">Hora de esterilación</th>
+						<th scope="col" class="columm-header">Eliminar</th>
+						<th scope="col" class="columm-header">Foto</th>
+					</tr>
+				</thead>
+				<tbody id="body-table"></tbody>
 			</table>
-	</div>
-	<script src="./js/tablesort.js"></script>
-	<script src="./js/main.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-</body>
-</html>
+		</div>
+		<input id="petedit-button" type="button" value="Editar">  
+		<div id="editpet">
+
+			<form>
+				<label for="mc-input">Seleccione id a editar:</label>
+				<input type="number" class="form-control" min="0" id="mcedit-input">
+				<label for="petsize-input">Tamaño:</label>
+				<select class="form-select" id="petsizeedit-input" required>
+					<option>Miniatura</option>
+					<option>Pequeño</option> 
+					<option>Mediano</option>
+					<option>Grande</option>
+				</select>
+
+				<label for="danger-input">¿La mascota es potencialmente peligrosa?:</label>
+				<select class="form-select" id="dangeredit-input" required>
+					<option>Si</option>
+					<option>No</option>
+				</select>
+				<label for="locality-input">Localidad:</label>
+				<select class="form-select" id="localityedit-input" >
+					<option>Usaquen</option>
+					<option>Chapinero</option>
+					<option>SANTA FE</option>
+					<option>SAN CRISTOBAL</option>
+					<option>USME</option>
+					<option>TUNJUELITO</option>
+					<option>BOSA</option>
+					<option>KENNEDY</option>
+					<option>FONTIBON</option>
+					<option>ENGATIVA</option>
+					<option>SUBA</option>
+					<option>B. UNIDOS</option>
+					<option>TEUSAQUILLO</option>
+					<option>LOS MARTIRES</option>
+					<option>A. NARINO</option>
+					<option>P. ARANDA</option>
+					<option>R. URIBE</option>
+					<option>C. BOLIVAR</option>
+					<option>MUNICIPIOS ALEDATORIOS BOGOTA D.C.</option>
+				</select>
+
+				<label for="owner-input">Editar microchip:</label>
+				<input type="text" class="form-control"  id="Microchipnew-inputtext" disabled="">
+				<label for="owner-input">Editar esterilizado:</label>
+				<select class="form-select" id="Esterilizadonew-select" disabled="">
+						<option>No</option>
+						<option>Si</option>
+					</select>
+
+			</form>
+			<br>
+			<input id="savechanges-button" type="button" value="Guardar Cambios">  
+
+		</div>
+		<script src="./js/jquery-3.6.0.min.js"></script>
+		
+		
+		<script src="./js/tablesort.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	</body>
+	</html>

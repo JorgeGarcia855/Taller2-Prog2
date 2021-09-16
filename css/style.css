@@ -11,7 +11,15 @@ th {
 }
 
 th.columm-header {
-    color: red;
+    color: #008080;
+    border: 1px solid #008080;
+    width: 100px; 
+}
+
+tbody.body-table {
+    color: #008080;
+    border: 1px solid #008080;
+    
 }
 
 .table-sortable th {
@@ -34,4 +42,53 @@ th.columm-header {
 .table-sortable .th-sort-asc,
 .table-sortable .th-sort-desc {
     background: rgba(0, 0, 0, 0.1);
+}
+
+tbody.body-table {
+    color: #008080;
+    border: 1px solid #008080;
+    
+}
+
+input#petedit-button{
+    position: absolute;
+    top: 390px;
+    left: 380px;
+    
+}
+
+input#Microchipnew-button{
+
+position: absolute;  
+
+
+}
+
+div#editpet{
+    position: absolute;
+    top: 420px;
+    left: 290px;
+    z-index: 999;
+    padding: 10px;
+    display: none;
+    border: 1px solid black;
+    background-color:  white; 
+
+
+
+
+}
+select#formedit-select{
+   border-radius: 40px;
+   background-color: black; 
+}
+
+input#Esterilizacionnew-button{
+    position: absolute;
+    left:150px ;
+}
+
+img {
+	width: 100px;
+	height: 100px;
 }
